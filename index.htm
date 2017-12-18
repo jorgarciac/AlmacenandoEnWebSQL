@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Registro alumnos</title>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>    
+        <link rel="stylesheet" href="style/bootstrap.min.css">
+    </head>
+<body class="bg-default">  
+    <h2 style="text-align:center">REGISTRO ALUMNOS</h2>            
+        <div align="center">
+            <div style="width:70%; text-align:left" class="form">
+                <input type="hidden" id="id"/>
+                Nombres:<input class="form-control" type="text" id="nombre" placeholder="Ingrese su nombre"/>
+                Apellidos:<input class="form-control" type="text" id="apellido" placeholder="Ingrese su apellido"/>
+                Cédula: <input class="form-control" type="text" id="cedula" placeholder="Ingrese su cédula"/>
+                Teléfono: <input class="form-control" type="text" id="telefono" placeholder="Ingrese su teléfono"/>
+                Dirección: <input class="form-control" type="text" id="direccion" placeholder="Ingrese su direccion"/></br>
+            </div>
+            
+            <div  class="btn-group btn-group-justified">
+               <button onClick="resetForm()">Nuevo</button>               
+               <button onClick="updateRecord()">Actualizar</button>
+               <button class="btn btn-primary" onClick="insertRecord()">Insertar</button>
+               <button onClick="dropTable()">Limpiar registros</button>
+            </div>
+            <br/><br/>            
+            <div id="results"></div>   
+        </div>
+    <script src="js/funciones.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+</body>
+</html>
